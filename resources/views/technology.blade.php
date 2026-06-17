@@ -63,30 +63,24 @@
                     <div class="bg-black border border-gray-800 p-4 font-mono text-[10px] text-gray-400 leading-relaxed">
 <pre class="text-neon-cyan">
 ┌─────────────────────────────────────┐
-│         ANTENNA ARRAY (AESA)        │
-│     ┌───┬───┬───┬───┬───┬───┐      │
-│     │T/R│T/R│T/R│T/R│T/R│T/R│      │
-│     ├───┼───┼───┼───┼───┼───┤      │
-│     │T/R│T/R│T/R│T/R│T/R│T/R│      │
-│     └───┴───┴───┴───┴───┴───┘      │
+          ANTENNA ARRAY (AESA)        
+      ┌───┬───┬───┬───┬───┬───┐      
+      │T/R│T/R│T/R│T/R│T/R│T/R│      
+      ├───┼───┼───┼───┼───┼───┤      
+      │T/R│T/R│T/R│T/R│T/R│T/R│      
+      └───┴───┴───┴───┴───┴───┘      
 └─────────────┬───────────────────────┘
-              │
-              ▼
 ┌─────────────────────────────────────┐
-│       BEAM FORMING COMPUTER         │
-│    [FPGA-BASED SIGNAL PROCESSOR]    │
+        BEAM FORMING COMPUTER         
+     [FPGA-BASED SIGNAL PROCESSOR]    
 └─────────────┬───────────────────────┘
-              │
-              ▼
 ┌─────────────────────────────────────┐
-│      TRACKING & CATALOGING          │
-│    [AI/ML DEBRIS CLASSIFICATION]    │
+       TRACKING & CATALOGING          
+     [AI/ML DEBRIS CLASSIFICATION]    
 └─────────────┬───────────────────────┘
-              │
-              ▼
 ┌─────────────────────────────────────┐
-│       SECURE DATA LINK (AES-256)    │
-│    [TRANSMISSION TO HQ NODES]       │
+        SECURE DATA LINK (AES-256)    
+     [TRANSMISSION TO HQ NODES]       
 └─────────────────────────────────────┘
 </pre>
                     </div>

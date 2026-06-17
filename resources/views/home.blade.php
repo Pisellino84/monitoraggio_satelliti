@@ -1,6 +1,6 @@
 <x-layout>
 
-    
+
 
     <header class="border-b border-gray-800 bg-radar-950 py-12 relative overflow-hidden">
         <div class="max-w-[1600px] mx-auto px-4 relative z-10">
@@ -38,51 +38,22 @@
             </div>
 
             <div class="flex flex-wrap gap-4 mt-8">
-                <a href="#radar-section"
+                <a href="/tracking-live"
                     class="bg-neon-cyan text-black px-6 py-3 text-xs font-bold uppercase tracking-widest hover:bg-white transition-none">
                     INIZIALIZZA TRACCIAMENTO LIVE
                 </a>
-                <button
-                    class="border border-gray-700 text-gray-300 px-6 py-3 text-xs font-bold uppercase tracking-widest hover:border-neon-cyan hover:text-neon-cyan transition-none">
-                    DOWNLOAD CAPABILITY STATEMENT [PDF]
-                </button>
+                <a href="{{ route('download.capability') }}" download="KRONOS_Capability_Statement.pdf">
+    <button class="border border-gray-700 text-gray-300 px-6 py-3 text-xs font-bold uppercase tracking-widest hover:border-neon-cyan hover:text-neon-cyan transition-none">
+        DOWNLOAD CAPABILITY STATEMENT [PDF]
+    </button>
+</a>
             </div>
         </div>
     </header>
 
 
 
-    <section id="radar-section" class="border-b border-gray-800 bg-black py-10">
-        <div class="max-w-[1600px] mx-auto px-4">
-            <div class="text-xs text-gray-500 uppercase tracking-widest mb-4 flex items-center gap-2">
-                <span class="text-neon-cyan">&gt;&gt;</span> SECTION_02 // CENTRO DI RILEVAMENTO TATTICO ORBITALE
-                LEO/MEO
-            </div>
-
-            <div class="grid grid-cols-1 xl:grid-cols-3 gap-6">
-                <div class="xl:col-span-2 border border-gray-800 bg-black p-1 relative">
-                    <div
-                        class="absolute top-4 left-4 text-xs text-neon-cyan z-10 font-bold bg-black/80 px-2 py-1 border border-neon-cyan/20">
-                        SST MATRIX: DISTRIBUTED RADAR ECHOES
-                    </div>
-                    <canvas id="radarCanvas" class="w-full h-[520px] bg-black block" width="900"
-                        height="520"></canvas>
-                </div>
-
-                <div class="border border-gray-800 bg-radar-900 flex flex-col h-[528px]">
-                    <div class="border-b border-gray-800 p-3 bg-black flex justify-between items-center">
-                        <span class="text-xs text-white font-bold uppercase tracking-widest">STREAMING TELEMETRICO RAW
-                            (DECODIFICATO)</span>
-                        <span
-                            class="text-[9px] text-neon-green border border-neon-green/30 px-1.5 py-0.5 bg-neon-green/5 animate-pulse">SYS_LIVE</span>
-                    </div>
-                    <div id="telemetry-log"
-                        class="p-4 text-[10px] text-gray-400 overflow-hidden flex-grow flex flex-col gap-1.5 font-mono">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    
 
     <section id="stats" class="border-b border-gray-800 bg-radar-950 py-16">
 
@@ -649,7 +620,7 @@
     </section>
 
 
-    
+
 
     <script>
         // Orologi Sincronizzati (Locale e UTC)
@@ -841,7 +812,7 @@
             }
         }
     </script>
-</body>
+    </body>
 
-</html>
+    </html>
 </x-layout>
