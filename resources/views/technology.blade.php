@@ -1,20 +1,29 @@
 <x-layout>
-    <header class="border-b border-gray-800 bg-radar-950 py-12">
-        <div class="max-w-[1600px] mx-auto px-4">
-            <div class="inline-flex items-center gap-3 border border-neon-cyan/40 bg-neon-cyan/5 px-3 py-1 text-[10px] text-neon-cyan uppercase tracking-widest mb-6">
-                <span class="w-1.5 h-1.5 bg-neon-cyan"></span>
-                TECHNICAL DOCUMENTATION // DECLASSIFIED OVERVIEW
-            </div>
-            <h1 class="text-4xl md:text-6xl font-black text-white tracking-tighter uppercase leading-none mb-4">
-                TECNOLOGIA<br>
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-neon-cyan to-blue-600">ARCHITETTURA DEI SISTEMI</span>
-            </h1>
-            <p class="text-sm text-gray-400 max-w-3xl">
-                Una panoramica declassificata delle tecnologie proprietarie che alimentano la rete di sorveglianza 
-                spaziale più avanzata al mondo. Precisione. Velocità. Resilienza.
-            </p>
+    <header class="relative border-b border-gray-800 bg-black py-16 md:py-24 overflow-hidden min-h-[75vh] flex items-center">
+    <div class="absolute inset-0 z-0">
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1920&q=80" 
+             alt="Phased-Array Processing Units" 
+             class="w-full h-full object-cover object-center opacity-30 filter brightness-75 contrast-125 scale-105">
+        
+    </div>
+
+    <div class="max-w-[1600px] mx-auto px-4 relative z-20 w-full">
+        <div class="inline-flex items-center gap-3 border border-neon-cyan/40 bg-neon-cyan/10 backdrop-blur-sm px-3 py-1 text-[10px] text-neon-cyan uppercase tracking-widest mb-6">
+            <span class="w-1.5 h-1.5 bg-neon-cyan animate-ping"></span>
+            HARDWARE SPECIFICATION // PHASED-ARRAY INTERFEROMETRY
         </div>
-    </header>
+
+        <h1 class="text-4xl md:text-6xl font-black text-white tracking-tighter uppercase leading-none mb-6">
+            POTENZA DI CALCOLO TATTICA.<br>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-orange-500 to-red-600 drop-shadow-[0_5px_20px_rgba(245,158,11,0.2)]">
+                TECNOLOGIA PHASED-ARRAY HARDCORE.
+            </span>
+        </h1>
+        <p class="text-sm md:text-base text-gray-300 max-w-3xl leading-relaxed font-light mb-8">
+            La nostra architettura si basa sul campionamento a radiofrequenza diretta e sulla sintesi di fascio digitale (Digital Beamforming). Elaboriamo petabyte di dati grezzi al secondo direttamente sull'orlo della rete (Edge Computing) per estrarre vettori orbitali puliti.
+        </p>
+    </div>
+</header>
     <!-- RADAR SYSTEMS -->
     <section class="border-b border-gray-800 bg-black py-16">
         <div class="max-w-[1600px] mx-auto px-4">

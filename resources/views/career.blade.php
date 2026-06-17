@@ -1,21 +1,29 @@
 <x-layout>
-    <header class="border-b border-gray-800 bg-radar-950 py-12">
-        <div class="max-w-[1600px] mx-auto px-4">
-            <div class="inline-flex items-center gap-3 border border-neon-green/40 bg-neon-green/5 px-3 py-1 text-[10px] text-neon-green uppercase tracking-widest mb-6">
-                <span class="w-1.5 h-1.5 bg-neon-green animate-pulse"></span>
-                RECRUITMENT ACTIVE // MULTIPLE POSITIONS AVAILABLE
-            </div>
-            <h1 class="text-4xl md:text-6xl font-black text-white tracking-tighter uppercase leading-none mb-4">
-                CARRIERE<br>
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-neon-cyan to-blue-600">UNISCITI ALLA MISSIONE</span>
-            </h1>
-            <p class="text-sm text-gray-400 max-w-3xl">
-                Kronos Aerospace cerca menti eccezionali per espandere le frontiere della sorveglianza spaziale. 
-                Se hai competenze in ingegneria aerospaziale, cybersecurity, data science o operazioni militari, 
-                la tua prossima missione ti aspetta.
-            </p>
+    <header class="relative border-b border-gray-800 bg-black py-16 md:py-24 overflow-hidden min-h-[75vh] flex items-center">
+    <div class="absolute inset-0 z-0">
+        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1920&q=80" 
+             alt="Cybernetic Engineering Terminal" 
+             class="w-full h-full object-cover object-center opacity-25 filter grayscale contrast-150 scale-102">
+        
+    </div>
+
+    <div class="max-w-[1600px] mx-auto px-4 relative z-20 w-full">
+        <div class="inline-flex items-center gap-3 border border-yellow-500/40 bg-yellow-500/10 backdrop-blur-sm px-3 py-1 text-[10px] text-yellow-500 uppercase tracking-widest mb-6">
+            <span class="w-1.5 h-1.5 bg-yellow-500"></span>
+            RECRUITING PROTOCOL // SEEKING ELITE ENGINEERS ONLY
         </div>
-    </header>
+
+        <h1 class="text-4xl md:text-6xl font-black text-white tracking-tighter uppercase leading-none mb-6">
+            COSTRUISCI IL FUTURO<br>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-fuchsia-500 to-pink-600 drop-shadow-[0_5px_20px_rgba(217,70,239,0.2)]">
+                DELL'INGEGNERIA ORBITALE.
+            </span>
+        </h1>
+        <p class="text-sm md:text-base text-gray-300 max-w-3xl leading-relaxed font-light mb-8">
+            Non cerchiamo semplici sviluppatori o impiegati. Cerchiamo pionieri dei sistemi distribuiti, esperti di telecomunicazioni a microonde e matematici d'assalto pronti a risolvere problemi di meccanica orbitale non lineare in tempo reale.
+        </p>
+    </div>
+</header>
     <!-- WHY KRONOS -->
     <section class="border-b border-gray-800 bg-black py-16">
         <div class="max-w-[1600px] mx-auto px-4">

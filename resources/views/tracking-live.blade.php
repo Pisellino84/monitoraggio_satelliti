@@ -9,7 +9,12 @@
                 <h1 class="text-2xl font-black text-white uppercase tracking-tighter leading-none">
                     KRONOS // <span class="text-transparent bg-clip-text bg-gradient-to-r from-neon-cyan to-blue-500">ORBITAL TARGETING MATRIX</span>
                 </h1>
+                
             </div>
+            <a href="/customers/ranking"
+                    class="bg-neon-cyan text-black px-6 py-3 text-xs font-bold uppercase tracking-widest hover:bg-white transition-none">
+                    CLASSIFICA AGENZIE
+                </a>
         </header>
 
         <div class="grid grid-cols-1 xl:grid-cols-4 gap-6 items-start">
@@ -106,10 +111,13 @@
 
     <script>
         // Orologio UTC
-        function updateClock() {
-            document.getElementById('sys-clock').innerText = new Date().toISOString().substring(11, 19) + ' UTC';
+        function updateClocks() {
+            const now = new Date();
+            document.getElementById('local-clock').innerText = now.toTimeString().substring(0, 8);
+            document.getElementById('sys-clock').innerText = now.toISOString().substring(11, 19) + ' UTC';
         }
-        setInterval(updateClock, 1000); updateClock();
+        setInterval(updateClocks, 1000);
+        updateClocks();
 
         // Configurazione Radar Canvas
         const canvas = document.getElementById('liveRadarCanvas');

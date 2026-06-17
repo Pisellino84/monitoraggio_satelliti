@@ -1,8 +1,8 @@
 <?php
 
+use App\Http\Controllers\CustomerController;
 use App\Models\Satellite;
 use Illuminate\Support\Facades\Route;
-use Illuminate\Support\Facades\Storage;
 
 Route::get('/', function () {
     return view('home');
@@ -47,4 +47,4 @@ Route::get('/download-capability-statement', function () {
     ]);
 })->name('download.capability');
 
-Route::get('/ranking', [OrbitalControlController::class, 'customerRanking'])->name('customers.ranking');
+Route::get('/customers/ranking', [CustomerController::class, 'ranking'])->name('customers.ranking');

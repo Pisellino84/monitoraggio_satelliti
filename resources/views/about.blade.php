@@ -1,22 +1,31 @@
 <x-layout>
     
-    <header class="border-b border-gray-800 bg-radar-950 py-12">
-        <div class="max-w-[1600px] mx-auto px-4">
-            <div class="inline-flex items-center gap-3 border border-gray-700 bg-black px-3 py-1 text-[10px] text-gray-400 uppercase tracking-widest mb-6">
-                <span class="w-1.5 h-1.5 bg-neon-cyan"></span>
-                SECTION: CORPORATE INTELLIGENCE FILE // CLEARANCE: PUBLIC
-            </div>
-            <h1 class="text-4xl md:text-6xl font-black text-white tracking-tighter uppercase leading-none mb-4">
-                CHI SIAMO<br>
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-neon-cyan to-blue-600">IDENTITÀ OPERATIVA</span>
-            </h1>
-            <p class="text-sm text-gray-400 max-w-3xl">
-                Kronos Aerospace è il punto di riferimento globale per la sorveglianza spaziale avanzata. 
-                Fondata da veterani dell'industria aerospaziale e della difesa, l'organizzazione opera ai massimi livelli 
-                di sicurezza e precisione tecnologica.
-            </p>
+    <header class="relative border-b border-gray-800 bg-black py-16 md:py-24 overflow-hidden min-h-[75vh] flex items-center">
+    <div class="absolute inset-0 z-0">
+        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1920&q=80" 
+             alt="Global Infrastructure Horizon" 
+             class="w-full h-full object-cover object-center opacity-35 filter brightness-90 saturate-50 scale-105">
+        
+    </div>
+
+    <div class="max-w-[1600px] mx-auto px-4 relative z-20 w-full">
+        <div class="inline-flex items-center gap-3 border border-neon-cyan/40 bg-neon-cyan/10 backdrop-blur-sm px-3 py-1 text-[10px] text-neon-cyan uppercase tracking-widest mb-6">
+            <span class="w-1.5 h-1.5 bg-neon-cyan"></span>
+            GLOBAL INFRASTRUCTURE // THE NETWORK BEHIND THE RADAR
         </div>
-    </header>
+
+        <h1 class="text-4xl md:text-6xl font-black text-white tracking-tighter uppercase leading-none mb-6">
+            OLTRE L'ORIZZONTE VISIBILE.<br>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-neon-green to-emerald-500 drop-shadow-[0_5px_20px_rgba(16,185,129,0.2)]">
+                LA NOSTRA STORIA E LA RETE GLOBALE.
+            </span>
+        </h1>
+        <p class="text-sm md:text-base text-gray-300 max-w-3xl leading-relaxed font-light mb-8">
+            Nati dall'unione di ingegneria aerospaziale avanzata e algoritmi di intelligence militare, mappiamo l'orbita terrestre per renderla un luogo sicuro e calcolabile. Monitoriamo costantemente migliaia di oggetti tracciabili per difendere gli asset orbitali del domani.
+        </p>
+
+    </div>
+</header>
     <!-- MISSION SECTION -->
     <section class="border-b border-gray-800 bg-black py-16">
         <div class="max-w-[1600px] mx-auto px-4">

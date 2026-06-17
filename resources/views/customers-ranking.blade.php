@@ -11,7 +11,6 @@
                     KRONOS // <span class="text-transparent bg-clip-text bg-gradient-to-r from-neon-cyan to-blue-600">CLIENT FLEET RANKING</span>
                 </h1>
             </div>
-            <div id="sys-clock" class="text-neon-green text-xs font-bold tracking-widest">00:00:00 UTC</div>
         </header>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8 text-center md:text-left">
@@ -36,7 +35,6 @@
         <div class="border border-gray-800 bg-black relative">
             <div class="border-b border-gray-800 p-4 bg-radar-950 flex justify-between items-center">
                 <h2 class="text-xs font-bold text-white uppercase tracking-widest">MATRICE GERARCHICA DELLA COSTELLAZIONE</h2>
-                <span class="text-[9px] text-neon-cyan uppercase">Filtro: Ordinamento Decrescente Satelliti</span>
             </div>
 
             <div class="overflow-x-auto">
@@ -47,7 +45,6 @@
                             <th class="p-4">AGENCY_NAME</th>
                             <th class="p-4">CLASSIFICAZIONE TIPO</th>
                             <th class="p-4 text-center">SATELLITI TRACCIATI</th>
-                            <th class="p-4 text-right">FATTURAZIONE MENSILE</th>
                             <th class="p-4">CANALE DI CONTATTO</th>
                         </tr>
                     </thead>
@@ -85,9 +82,7 @@
                                     </div>
                                 </td>
                                 
-                                <td class="p-4 text-right text-neon-green font-semibold pr-8">
-                                    €{{ number_format($customer->monthly_billing, 2, ',', '.') }}
-                                </td>
+                                
                                 
                                 <td class="p-4 text-gray-500 normal-case text-[10px]">
                                     <div class="flex flex-col gap-0.5">

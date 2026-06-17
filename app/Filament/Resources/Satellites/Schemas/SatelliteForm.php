@@ -32,7 +32,8 @@ class SatelliteForm
                 FileUpload::make('image')
                     ->label('Immagine')
                     ->image()
-                    ->directory('satellites'),
+                    ->directory('satellites')
+                    ->required(),
                 Select::make('status')
                     ->label('Stato')
                     ->options([

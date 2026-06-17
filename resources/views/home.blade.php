@@ -1,38 +1,52 @@
 <x-layout>
+    <header
+        class="relative border-b border-gray-800 bg-black py-16 md:py-24 overflow-hidden min-h-[85vh] flex items-center">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?auto=format&fit=crop&w=1920&q=80"
+                alt="Deep Space Satellite Tracking Network"
+                class="w-full h-full object-cover object-center opacity-40 filter brightness-90 saturate-75 scale-105 animate-[pulse_8s_ease-in-out_infinite]">
 
+        </div>
 
-
-    <header class="border-b border-gray-800 bg-radar-950 py-12 relative overflow-hidden">
-        <div class="max-w-[1600px] mx-auto px-4 relative z-10">
+        <div class="max-w-[1600px] mx-auto px-4 relative z-20 w-full">
             <div
-                class="inline-flex items-center gap-3 border border-neon-red/40 bg-neon-red/5 px-3 py-1 text-[10px] text-neon-red uppercase tracking-widest mb-6">
+                class="inline-flex items-center gap-3 border border-neon-red/40 bg-neon-red/10 backdrop-blur-sm px-3 py-1 text-[10px] text-neon-red uppercase tracking-widest mb-8">
                 <span class="w-1.5 h-1.5 bg-neon-red animate-pulse"></span>
                 CLASSIFIED: FOR INSTITUTIONAL, COMMERCE & DEFENSE USE ONLY // INTERNAL DATA REPLICATION PROTOCOL 09-C
             </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
                 <div class="lg:col-span-2">
-                    <h1 class="text-4xl md:text-6xl font-black text-white tracking-tighter uppercase leading-none mb-4">
+                    <h1
+                        class="text-4xl md:text-6xl xl:text-7xl font-black text-white tracking-tighter uppercase leading-none mb-6">
                         CONTROLLO ASSOLUTO.<br>
-                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-neon-cyan to-blue-600">DOMINIO
-                            SPAZIALE INTEGRATO.</span>
+                        <span
+                            class="text-transparent bg-clip-text bg-gradient-to-r from-neon-cyan via-blue-500 to-indigo-600 drop-shadow-[0_5px_20px_rgba(0,240,255,0.3)]">
+                            DOMINIO SPAZIALE INTEGRATO.
+                        </span>
                     </h1>
-                    <p class="text-sm md:text-base text-gray-400 max-w-3xl leading-relaxed">
+                    <p
+                        class="text-sm md:text-base text-gray-300 max-w-3xl leading-relaxed font-light backdrop-blur-[2px] bg-black/10 p-2 rounded">
                         Forniamo consapevolezza situazionale spaziale (SSA) ed elaborazione telemetrica a latenza zero
                         per agenzie governative, forze di difesa ed operatori di mega-costellazioni commerciali. Nessuna
                         approssimazione. Tracciamento centimetrico garantito da rete radar phased-array proprietaria.
                     </p>
                 </div>
 
-                <div class="border border-gray-800 bg-black p-4 text-[11px] leading-tight flex flex-col gap-2">
-                    <div class="text-white font-bold border-b border-gray-800 pb-1 uppercase text-xs text-neon-cyan">
+                <div
+                    class="border border-gray-800 bg-black/60 backdrop-blur-md p-5 text-[11px] leading-tight flex flex-col gap-2.5 shadow-2xl shadow-neon-cyan/5">
+                    <div
+                        class="text-white font-bold border-b border-gray-800 pb-2 uppercase text-xs text-neon-cyan tracking-wider">
                         SYSTEM ARCHITECTURE METRICS</div>
                     <div>ENC_ALGORITHM: <span class="text-white">AES-256-GCM / RSA-4096</span></div>
-                    <div>DATA LATENCY: <span class="text-neon-green">&lt; 8.4 MS (GLOBAL AVERAGED)</span></div>
+                    <div>DATA LATENCY: <span class="text-neon-green font-semibold">&lt; 8.4 MS (GLOBAL AVERAGED)</span>
+                    </div>
                     <div>RADAR CROSS SECTION MIN: <span class="text-white">0.01 m² AT 2,000 KM</span></div>
-                    <div class="pt-2 border-t border-gray-800 text-gray-500 flex justify-between">
+                    <div class="pt-2.5 border-t border-gray-800 text-gray-500 flex justify-between items-center">
                         <span>SIG_LEVEL: ALPHA-6</span>
-                        <span class="text-neon-green">ACTIVE_NODE</span>
+                        <span class="text-neon-green flex items-center gap-1">
+                            <span class="w-1 h-1 bg-neon-green rounded-full animate-ping"></span> ACTIVE_NODE
+                        </span>
                     </div>
                 </div>
             </div>
@@ -43,17 +57,18 @@
                     INIZIALIZZA TRACCIAMENTO LIVE
                 </a>
                 <a href="{{ route('download.capability') }}" download="KRONOS_Capability_Statement.pdf">
-    <button class="border border-gray-700 text-gray-300 px-6 py-3 text-xs font-bold uppercase tracking-widest hover:border-neon-cyan hover:text-neon-cyan transition-none">
-        DOWNLOAD CAPABILITY STATEMENT [PDF]
-    </button>
-</a>
+                    <button
+                        class="border border-gray-700 text-gray-300 px-6 py-3 text-xs font-bold uppercase tracking-widest hover:border-neon-cyan hover:text-neon-cyan transition-none">
+                        DOWNLOAD CAPABILITY STATEMENT [PDF]
+                    </button>
+                </a>
             </div>
         </div>
     </header>
 
 
 
-    
+
 
     <section id="stats" class="border-b border-gray-800 bg-radar-950 py-16">
 

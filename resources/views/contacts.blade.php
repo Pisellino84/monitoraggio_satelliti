@@ -1,21 +1,30 @@
 <x-layout>
 
-    <header class="border-b border-gray-800 bg-radar-950 py-12">
-        <div class="max-w-[1600px] mx-auto px-4">
-            <div class="inline-flex items-center gap-3 border border-neon-amber/40 bg-neon-amber/5 px-3 py-1 text-[10px] text-neon-amber uppercase tracking-widest mb-6">
-                <span class="w-1.5 h-1.5 bg-neon-amber animate-pulse"></span>
-                SECURE COMMUNICATION CHANNEL // ENCRYPTED TRANSMISSION
-            </div>
-            <h1 class="text-4xl md:text-6xl font-black text-white tracking-tighter uppercase leading-none mb-4">
-                CONTATTI<br>
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-neon-cyan to-blue-600">CANALI DI COMUNICAZIONE</span>
-            </h1>
-            <p class="text-sm text-gray-400 max-w-3xl">
-                Tutte le comunicazioni verso Kronos Aerospace sono crittografate end-to-end. 
-                Per richieste classificate o accesso a servizi TIER-III, è richiesta verifica delle credenziali istituzionali.
-            </p>
+    <header class="relative border-b border-gray-800 bg-black py-16 md:py-24 overflow-hidden min-h-[70vh] flex items-center">
+    <div class="absolute inset-0 z-0">
+        <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1920&q=80" 
+             alt="Encrypted Uplink Terminal" 
+             class="w-full h-full object-cover object-center opacity-30 filter brightness-50 saturate-100 scale-105">
+        
+    </div>
+
+    <div class="max-w-[1600px] mx-auto px-4 relative z-20 w-full">
+        <div class="inline-flex items-center gap-3 border border-neon-red/40 bg-neon-red/10 backdrop-blur-sm px-3 py-1 text-[10px] text-neon-red uppercase tracking-widest mb-6">
+            <span class="w-1.5 h-1.5 bg-neon-red animate-pulse"></span>
+            SECURE COMMS // DIRECT END-TO-END ENCRYPTED UPLINK
         </div>
-    </header>
+
+        <h1 class="text-4xl md:text-6xl font-black text-white tracking-tighter uppercase leading-none mb-6">
+            STABILISCI UN CONTATTO.<br>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-neon-red to-red-500 drop-shadow-[0_5px_20px_rgba(239,68,68,0.3)]">
+                CANALE CANALIZZATO SICURO.
+            </span>
+        </h1>
+        <p class="text-sm md:text-base text-gray-300 max-w-2xl leading-relaxed font-light mb-8">
+            Sia per richieste governative ad alta sicurezza che per integrazioni commerciali di tracciamento asset, il nostro team risponde tramite canali protetti entro 12 ore operative. Usa il modulo sottostante per avviare il protocollo di comunicazione.
+        </p>
+    </div>
+</header>
 
     <!-- CONTACT FORM & INFO -->
     <section class="border-b border-gray-800 bg-black py-16">
