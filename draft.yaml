@@ -1,0 +1,36 @@
+models:
+  Customer:
+    agency_name: varchar
+    agency_type: enum:military,government,commercial
+    email: varchar
+    cellphone: varchar
+    bio: text
+    monthly_billing: decimal:6,2
+    relationships:
+      hasMany: Satellite
+
+  Satellite:
+    name: varchar
+    model: varchar
+    customer_id: integer
+    image: varchar
+    status: enum:active,inactive,in_alarm,under_maintenance
+    norad: integer # codice di tracciamento spaziale
+    cospair: varchar #identificativo nazionale di lancio
+    orbit_type: enum:LEO,MEO,GEO,SSO
+    inclination: decimal:5,2
+    apogee: integer
+    perigee: integer
+    lauch_date: datetime
+    relationships:
+      belongsTo: Customer
+      belongsToMany: Sensor
+
+  Sensor:
+    name: varchar
+    description: text
+    sensor_type: enum:magnometer,star_tracker,payload_temperature_sensor,solar_attitude_sensor,gyroscope
+    hardware_model: varchar
+    status: enum:active,inactive,in_alarm,under_maintenance
+    relationships:
+      belongsToMany: Satellite

@@ -1,0 +1,16 @@
+created:
+    - database/factories/CustomerFactory.php
+    - database/factories/SatelliteFactory.php
+    - database/factories/SensorFactory.php
+    - database/migrations/2026_06_17_073823_create_customers_table.php
+    - database/migrations/2026_06_17_073824_create_satellites_table.php
+    - database/migrations/2026_06_17_073825_create_sensors_table.php
+    - database/migrations/2026_06_17_073826_create_satellite_sensor_table.php
+    - app/Models/Customer.php
+    - app/Models/Satellite.php
+    - app/Models/Sensor.php
+models:
+    User: { name: string, email: string, email_verified_at: 'datetime nullable', password: string, remember_token: 'string nullable' }
+    Customer: { agency_name: varchar, agency_type: 'enum:military,government,commercial', email: varchar, cellphone: varchar, bio: text, monthly_billing: 'decimal:6,2', relationships: { hasMany: Satellite } }
+    Satellite: { name: varchar, model: varchar, customer_id: integer, image: varchar, status: 'enum:active,inactive,in_alarm,under_maintenance', norad: integer, cospair: varchar, orbit_type: 'enum:LEO,MEO,GEO,SSO', inclination: 'decimal:5,2', apogee: integer, perigee: integer, lauch_date: datetime, relationships: { belongsTo: Customer, belongsToMany: Sensor } }
+    Sensor: { name: varchar, description: text, sensor_type: 'enum:magnometer,star_tracker,payload_temperature_sensor,solar_attitude_sensor,gyroscope', hardware_model: varchar, status: 'enum:active,inactive,in_alarm,under_maintenance', relationships: { belongsToMany: Satellite } }
